@@ -1,0 +1,834 @@
+wpis_danych_ze_strony_pierwszej={}
+for i in range(1,23):
+    print("wpisz dane z pozycji:",i)
+    wpis_danych_ze_strony_pierwszej[i] = int(input())
+    
+print("te dane spisałeś ze strony pierwszej:", wpis_danych_ze_strony_pierwszej)
+
+wpis_danych_ze_strony_drugiej={}
+for i in range(23,44):
+    print("wpisz dane z pozycji:",i)
+    wpis_danych_ze_strony_drugiej[i] = int(input())
+    
+print("te dane spisałeś ze strony drugiej:",wpis_danych_ze_strony_drugiej)
+
+wpis_danych_ze_strony_pierwszej_i_drugiej = {}
+wpis_danych_ze_strony_pierwszej_i_drugiej.update(wpis_danych_ze_strony_pierwszej)
+wpis_danych_ze_strony_pierwszej_i_drugiej.update(wpis_danych_ze_strony_drugiej)
+print("to są dane z dwóch stron",wpis_danych_ze_strony_pierwszej_i_drugiej)
+
+wpis_danych_ze_strony_trzeciej={}
+for i in range(44,61):
+    print("wpisz dane z pozycji:",i)
+    wpis_danych_ze_strony_trzeciej[i] = int(input())
+    
+print("te dane spisałeś ze strony trzeciej:",wpis_danych_ze_strony_trzeciej)
+
+wpis_danych_ze_strony_pierwszej_i_drugiej_i_trzeciej = {}
+wpis_danych_ze_strony_pierwszej_i_drugiej_i_trzeciej.update(wpis_danych_ze_strony_pierwszej)
+wpis_danych_ze_strony_pierwszej_i_drugiej_i_trzeciej.update(wpis_danych_ze_strony_drugiej)
+wpis_danych_ze_strony_pierwszej_i_drugiej_i_trzeciej.update(wpis_danych_ze_strony_trzeciej)
+print("to są dane z trzech stron",wpis_danych_ze_strony_pierwszej_i_drugiej_i_trzeciej)
+
+wpis_wszystkiego1= wpis_danych_ze_strony_pierwszej_i_drugiej_i_trzeciej
+
+
+pozycje_neu=[1,6,11,16,21,26,31,36,41,46,51,56]
+wpisy_w_Neu=[value for (key,value) in wpis_wszystkiego1.items() if key in pozycje_neu] 
+print("**********************************************************")
+print("To wypełniający zakreślił w pozycjach Neu",wpisy_w_Neu)
+# pozycja 1
+wynik_w_Neu= []
+if wpisy_w_Neu[0]==5:
+    wynik_w_Neu.append(0)
+elif wpisy_w_Neu[0]==4:
+    wynik_w_Neu.append(1)
+elif wpisy_w_Neu[0]==3:
+    wynik_w_Neu.append(2)
+elif wpisy_w_Neu[0]==2:
+    wynik_w_Neu.append(3)
+elif wpisy_w_Neu[0]==1:
+    wynik_w_Neu.append(4)
+    
+# pozycja 6
+if wpisy_w_Neu[1]==5:
+    wynik_w_Neu.append(4)
+elif wpisy_w_Neu[1]==4:
+    wynik_w_Neu.append(3)
+elif wpisy_w_Neu[1]==3:
+    wynik_w_Neu.append(2)
+elif wpisy_w_Neu[1]==2:
+    wynik_w_Neu.append(1)
+elif wpisy_w_Neu[1]==1:
+    wynik_w_Neu.append(0)
+
+#pozycja 11
+if wpisy_w_Neu[2]==5:
+    wynik_w_Neu.append(4)
+elif wpisy_w_Neu[2]==4:
+    wynik_w_Neu.append(3)
+elif wpisy_w_Neu[2]==3:
+    wynik_w_Neu.append(2)
+elif wpisy_w_Neu[2]==2:
+    wynik_w_Neu.append(1)
+elif wpisy_w_Neu[2]==1:
+    wynik_w_Neu.append(0) 
+
+#pozycja16
+
+if wpisy_w_Neu[3]==5:
+    wynik_w_Neu.append(0)
+elif wpisy_w_Neu[3]==4:
+    wynik_w_Neu.append(1)
+elif wpisy_w_Neu[3]==3:
+    wynik_w_Neu.append(2)
+elif wpisy_w_Neu[3]==2:
+    wynik_w_Neu.append(3)
+elif wpisy_w_Neu[3]==1:
+    wynik_w_Neu.append(4)
+    
+#pozycja21
+    
+if wpisy_w_Neu[4]==5:
+    wynik_w_Neu.append(4)
+elif wpisy_w_Neu[4]==4:
+    wynik_w_Neu.append(3)
+elif wpisy_w_Neu[4]==3:
+    wynik_w_Neu.append(2)
+elif wpisy_w_Neu[4]==2:
+    wynik_w_Neu.append(1)
+elif wpisy_w_Neu[4]==1:
+    wynik_w_Neu.append(0) 
+
+#pozycja 26
+if wpisy_w_Neu[5]==5:
+    wynik_w_Neu.append(4)
+elif wpisy_w_Neu[5]==4:
+    wynik_w_Neu.append(3)
+elif wpisy_w_Neu[5]==3:
+    wynik_w_Neu.append(2)
+elif wpisy_w_Neu[5]==2:
+    wynik_w_Neu.append(1)
+elif wpisy_w_Neu[5]==1:
+    wynik_w_Neu.append(0) 
+       
+#pozycja 31
+if wpisy_w_Neu[6]==5:
+    wynik_w_Neu.append(0)
+elif wpisy_w_Neu[6]==4:
+    wynik_w_Neu.append(1)
+elif wpisy_w_Neu[6]==3:
+    wynik_w_Neu.append(2)
+elif wpisy_w_Neu[6]==2:
+    wynik_w_Neu.append(3)
+elif wpisy_w_Neu[6]==1:
+    wynik_w_Neu.append(4)
+#pozycja 36   
+if wpisy_w_Neu[7]==5:
+    wynik_w_Neu.append(4)
+elif wpisy_w_Neu[7]==4:
+    wynik_w_Neu.append(3)
+elif wpisy_w_Neu[7]==3:
+    wynik_w_Neu.append(2)
+elif wpisy_w_Neu[7]==2:
+    wynik_w_Neu.append(1)
+elif wpisy_w_Neu[7]==1:
+    wynik_w_Neu.append(0) 
+    
+#pozycja 41
+if wpisy_w_Neu[8]==5:
+    wynik_w_Neu.append(4)
+elif wpisy_w_Neu[8]==4:
+    wynik_w_Neu.append(3)
+elif wpisy_w_Neu[8]==3:
+    wynik_w_Neu.append(2)
+elif wpisy_w_Neu[8]==2:
+    wynik_w_Neu.append(1)
+elif wpisy_w_Neu[8]==1:
+    wynik_w_Neu.append(0) 
+    
+#pozycja 46
+if wpisy_w_Neu[9]==5:
+    wynik_w_Neu.append(0)
+elif wpisy_w_Neu[9]==4:
+    wynik_w_Neu.append(1)
+elif wpisy_w_Neu[9]==3:
+    wynik_w_Neu.append(2)
+elif wpisy_w_Neu[9]==2:
+    wynik_w_Neu.append(3)
+elif wpisy_w_Neu[9]==1:
+    wynik_w_Neu.append(4)  
+    
+#pozycja 51
+if wpisy_w_Neu[10]==5:
+    wynik_w_Neu.append(4)
+elif wpisy_w_Neu[10]==4:
+    wynik_w_Neu.append(3)
+elif wpisy_w_Neu[10]==3:
+    wynik_w_Neu.append(2)
+elif wpisy_w_Neu[10]==2:
+    wynik_w_Neu.append(1)
+elif wpisy_w_Neu[10]==1:
+    wynik_w_Neu.append(0) 
+    
+#pozycja 56
+if wpisy_w_Neu[11]==5:
+    wynik_w_Neu.append(4)
+elif wpisy_w_Neu[11]==4:
+    wynik_w_Neu.append(3)
+elif wpisy_w_Neu[11]==3:
+    wynik_w_Neu.append(2)
+elif wpisy_w_Neu[11]==2:
+    wynik_w_Neu.append(1)
+elif wpisy_w_Neu[11]==1:
+    wynik_w_Neu.append(0) 
+
+print("To są wartości dla wpisu wypełniającego",wynik_w_Neu)
+wynik_ostateczny_w_Neu = sum(wynik_w_Neu)
+print("To jest ostateczny wynik w Neu:",wynik_ostateczny_w_Neu)
+
+print("-------------------------------------------------------------")
+pozycje_Eks=[2,7,12,17,22,27,32,37,42,47,52,57]
+wpisy_w_Eks=[value for (key,value) in wpis_wszystkiego1.items() if key in pozycje_Eks] 
+print("To wypełniający zakreślił w pozycjach Eks",wpisy_w_Eks)
+wynik_w_Eks=[]
+# pozycja 2
+if wpisy_w_Eks[0]==5:
+    wynik_w_Eks.append(4)
+elif wpisy_w_Eks[0]==4:
+    wynik_w_Eks.append(3)
+elif wpisy_w_Eks[0]==3:
+    wynik_w_Eks.append(2)
+elif wpisy_w_Eks[0]==2:
+    wynik_w_Eks.append(1)
+elif wpisy_w_Eks[0]==1:
+    wynik_w_Eks.append(0)
+#pozycja 7
+if wpisy_w_Eks[1]==5:
+    wynik_w_Eks.append(4)
+elif wpisy_w_Eks[1]==4:
+    wynik_w_Eks.append(3)
+elif wpisy_w_Eks[1]==3:
+    wynik_w_Eks.append(2)
+elif wpisy_w_Eks[1]==2:
+    wynik_w_Eks.append(1)
+elif wpisy_w_Eks[1]==1:
+    wynik_w_Eks.append(0)
+    
+#pozycja 12
+if wpisy_w_Eks[2]==5:
+    wynik_w_Eks.append(0)
+elif wpisy_w_Eks[2]==4:
+    wynik_w_Eks.append(1)
+elif wpisy_w_Eks[2]==3:
+    wynik_w_Eks.append(2)
+elif wpisy_w_Eks[2]==2:
+    wynik_w_Eks.append(3)
+elif wpisy_w_Eks[2]==1:
+    wynik_w_Eks.append(4)  
+
+#pozycja 17
+if wpisy_w_Eks[3]==5:
+    wynik_w_Eks.append(4)
+elif wpisy_w_Eks[3]==4:
+    wynik_w_Eks.append(3)
+elif wpisy_w_Eks[3]==3:
+    wynik_w_Eks.append(2)
+elif wpisy_w_Eks[3]==2:
+    wynik_w_Eks.append(1)
+elif wpisy_w_Eks[3]==1:
+    wynik_w_Eks.append(0)
+
+#pozycja 22
+if wpisy_w_Eks[4]==5:
+    wynik_w_Eks.append(4)
+elif wpisy_w_Eks[4]==4:
+    wynik_w_Eks.append(3)
+elif wpisy_w_Eks[4]==3:
+    wynik_w_Eks.append(2)
+elif wpisy_w_Eks[4]==2:
+    wynik_w_Eks.append(1)
+elif wpisy_w_Eks[4]==1:
+    wynik_w_Eks.append(0)
+    
+#pozycja 27   
+if wpisy_w_Eks[5]==5:
+    wynik_w_Eks.append(0)
+elif wpisy_w_Eks[5]==4:
+    wynik_w_Eks.append(1)
+elif wpisy_w_Eks[5]==3:
+    wynik_w_Eks.append(2)
+elif wpisy_w_Eks[5]==2:
+    wynik_w_Eks.append(3)
+elif wpisy_w_Eks[5]==1:
+    wynik_w_Eks.append(4) 
+
+#pozycja 32
+if wpisy_w_Eks[6]==5:
+    wynik_w_Eks.append(4)
+elif wpisy_w_Eks[6]==4:
+    wynik_w_Eks.append(3)
+elif wpisy_w_Eks[6]==3:
+    wynik_w_Eks.append(2)
+elif wpisy_w_Eks[6]==2:
+    wynik_w_Eks.append(1)
+elif wpisy_w_Eks[6]==1:
+    wynik_w_Eks.append(0)
+    
+#pozycja 37
+    
+if wpisy_w_Eks[7]==5:
+    wynik_w_Eks.append(4)
+elif wpisy_w_Eks[7]==4:
+    wynik_w_Eks.append(3)
+elif wpisy_w_Eks[7]==3:
+    wynik_w_Eks.append(2)
+elif wpisy_w_Eks[7]==2:
+    wynik_w_Eks.append(1)
+elif wpisy_w_Eks[7]==1:
+    wynik_w_Eks.append(0)
+
+#pozycja 42
+if wpisy_w_Eks[8]==5:
+    wynik_w_Eks.append(0)
+elif wpisy_w_Eks[8]==4:
+    wynik_w_Eks.append(1)
+elif wpisy_w_Eks[8]==3:
+    wynik_w_Eks.append(2)
+elif wpisy_w_Eks[8]==2:
+    wynik_w_Eks.append(3)
+elif wpisy_w_Eks[8]==1:
+    wynik_w_Eks.append(4) 
+    
+#pozycja 47
+if wpisy_w_Eks[9]==5:
+    wynik_w_Eks.append(4)
+elif wpisy_w_Eks[9]==4:
+    wynik_w_Eks.append(3)
+elif wpisy_w_Eks[9]==3:
+    wynik_w_Eks.append(2)
+elif wpisy_w_Eks[9]==2:
+    wynik_w_Eks.append(1)
+elif wpisy_w_Eks[9]==1:
+    wynik_w_Eks.append(0)
+
+#pozycja52
+if wpisy_w_Eks[10]==5:
+    wynik_w_Eks.append(4)
+elif wpisy_w_Eks[10]==4:
+    wynik_w_Eks.append(3)
+elif wpisy_w_Eks[10]==3:
+    wynik_w_Eks.append(2)
+elif wpisy_w_Eks[10]==2:
+    wynik_w_Eks.append(1)
+elif wpisy_w_Eks[10]==1:
+    wynik_w_Eks.append(0)
+    
+#pozycja 57
+
+if wpisy_w_Eks[11]==5:
+    wynik_w_Eks.append(0)
+elif wpisy_w_Eks[11]==4:
+    wynik_w_Eks.append(1)
+elif wpisy_w_Eks[11]==3:
+    wynik_w_Eks.append(2)
+elif wpisy_w_Eks[11]==2:
+    wynik_w_Eks.append(3)
+elif wpisy_w_Eks[11]==1:
+    wynik_w_Eks.append(4) 
+
+
+print("To są wartości dla wpisu wypełniającego",wynik_w_Eks)
+wynik_ostateczny_w_Eks = sum(wynik_w_Eks)
+print("To jest ostateczny wynik w Eks:",wynik_ostateczny_w_Eks)
+
+print("------------------------------------------------------------")
+
+pozycje_OTW=[3,8,13,18,23,28,33,38,43,48,53,58]
+wpisy_w_OTW=[value for (key,value) in wpis_wszystkiego1.items() if key in pozycje_OTW] 
+print("To wypełniający zakreślił w pozycjach OTW",wpisy_w_OTW)
+
+wynik_w_OTW=[]
+# pozycja 3
+if wpisy_w_OTW[0]==5:
+    wynik_w_OTW.append(0)
+elif wpisy_w_OTW[0]==4:
+    wynik_w_OTW.append(1)
+elif wpisy_w_OTW[0]==3:
+    wynik_w_OTW.append(2)
+elif wpisy_w_OTW[0]==2:
+    wynik_w_OTW.append(3)
+elif wpisy_w_OTW[0]==1:
+    wynik_w_OTW.append(4) 
+    
+#pozycja 8
+
+if wpisy_w_OTW[1]==5:
+    wynik_w_OTW.append(0)
+elif wpisy_w_OTW[1]==4:
+    wynik_w_OTW.append(1)
+elif wpisy_w_OTW[1]==3:
+    wynik_w_OTW.append(2)
+elif wpisy_w_OTW[1]==2:
+    wynik_w_OTW.append(3)
+elif wpisy_w_OTW[1]==1:
+    wynik_w_OTW.append(4) 
+    
+#pozycja 13
+if wpisy_w_OTW[2]==5:
+    wynik_w_OTW.append(4)
+elif wpisy_w_OTW[2]==4:
+    wynik_w_OTW.append(3)
+elif wpisy_w_OTW[2]==3:
+    wynik_w_OTW.append(2)
+elif wpisy_w_OTW[2]==2:
+    wynik_w_OTW.append(1)
+elif wpisy_w_OTW[2]==1:
+    wynik_w_OTW.append(0)
+
+    #pozycja 18
+
+if wpisy_w_OTW[3]==5:
+    wynik_w_OTW.append(0)
+elif wpisy_w_OTW[3]==4:
+    wynik_w_OTW.append(1)
+elif wpisy_w_OTW[3]==3:
+    wynik_w_OTW.append(2)
+elif wpisy_w_OTW[3]==2:
+    wynik_w_OTW.append(3)
+elif wpisy_w_OTW[3]==1:
+    wynik_w_OTW.append(4) 
+    
+#pozycja 23
+
+if wpisy_w_OTW[4]==5:
+    wynik_w_OTW.append(0)
+elif wpisy_w_OTW[4]==4:
+    wynik_w_OTW.append(1)
+elif wpisy_w_OTW[4]==3:
+    wynik_w_OTW.append(2)
+elif wpisy_w_OTW[4]==2:
+    wynik_w_OTW.append(3)
+elif wpisy_w_OTW[4]==1:
+    wynik_w_OTW.append(4)
+    
+#pozycja 28
+
+if wpisy_w_OTW[5]==5:
+    wynik_w_OTW.append(4)
+elif wpisy_w_OTW[5]==4:
+    wynik_w_OTW.append(3)
+elif wpisy_w_OTW[5]==3:
+    wynik_w_OTW.append(2)
+elif wpisy_w_OTW[5]==2:
+    wynik_w_OTW.append(1)
+elif wpisy_w_OTW[5]==1:
+    wynik_w_OTW.append(0)
+
+        #pozycja 33
+
+if wpisy_w_OTW[6]==5:
+    wynik_w_OTW.append(0)
+elif wpisy_w_OTW[6]==4:
+    wynik_w_OTW.append(1)
+elif wpisy_w_OTW[6]==3:
+    wynik_w_OTW.append(2)
+elif wpisy_w_OTW[6]==2:
+    wynik_w_OTW.append(3)
+elif wpisy_w_OTW[6]==1:
+    wynik_w_OTW.append(4) 
+    
+#pozycja 38
+
+if wpisy_w_OTW[7]==5:
+    wynik_w_OTW.append(0)
+elif wpisy_w_OTW[7]==4:
+    wynik_w_OTW.append(1)
+elif wpisy_w_OTW[7]==3:
+    wynik_w_OTW.append(2)
+elif wpisy_w_OTW[7]==2:
+    wynik_w_OTW.append(3)
+elif wpisy_w_OTW[7]==1:
+    wynik_w_OTW.append(4)
+    
+#pozycja 43
+if wpisy_w_OTW[8]==5:
+    wynik_w_OTW.append(4)
+elif wpisy_w_OTW[8]==4:
+    wynik_w_OTW.append(3)
+elif wpisy_w_OTW[8]==3:
+    wynik_w_OTW.append(2)
+elif wpisy_w_OTW[8]==2:
+    wynik_w_OTW.append(1)
+elif wpisy_w_OTW[8]==1:
+    wynik_w_OTW.append(0)
+
+#pozycja 48
+if wpisy_w_OTW[9]==5:
+    wynik_w_OTW.append(0)
+elif wpisy_w_OTW[9]==4:
+    wynik_w_OTW.append(1)
+elif wpisy_w_OTW[9]==3:
+    wynik_w_OTW.append(2)
+elif wpisy_w_OTW[9]==2:
+    wynik_w_OTW.append(3)
+elif wpisy_w_OTW[9]==1:
+    wynik_w_OTW.append(4)
+    
+#pozycja 53
+if wpisy_w_OTW[10]==5:
+    wynik_w_OTW.append(4)
+elif wpisy_w_OTW[10]==4:
+    wynik_w_OTW.append(3)
+elif wpisy_w_OTW[10]==3:
+    wynik_w_OTW.append(2)
+elif wpisy_w_OTW[10]==2:
+    wynik_w_OTW.append(1)
+elif wpisy_w_OTW[10]==1:
+    wynik_w_OTW.append(0)
+    
+#pozycja 58
+if wpisy_w_OTW[11]==5:
+    wynik_w_OTW.append(4)
+elif wpisy_w_OTW[11]==4:
+    wynik_w_OTW.append(3)
+elif wpisy_w_OTW[11]==3:
+    wynik_w_OTW.append(2)
+elif wpisy_w_OTW[11]==2:
+    wynik_w_OTW.append(1)
+elif wpisy_w_OTW[11]==1:
+    wynik_w_OTW.append(0)
+    
+print("To są wartości dla wpisu wypełniającego",wynik_w_OTW)
+wynik_ostateczny_w_OTW = sum(wynik_w_OTW)
+print("To jest ostateczny wynik w OTW:",wynik_ostateczny_w_OTW)
+
+print("------------------------------------------------------------")
+
+
+
+pozycje_UGD=[4,9,14,19,24,29,34,39,44,49,54,59]
+wpisy_w_UGD=[value for (key,value) in wpis_wszystkiego1.items() if key in pozycje_UGD] 
+print("To wypełniający zakreślił w pozycjach UGD",wpisy_w_UGD)
+
+wynik_w_UGD=[]
+# pozycja 4
+if wpisy_w_UGD[0]==5:
+    wynik_w_UGD.append(4)
+elif wpisy_w_UGD[0]==4:
+    wynik_w_UGD.append(3)
+elif wpisy_w_UGD[0]==3:
+    wynik_w_UGD.append(2)
+elif wpisy_w_UGD[0]==2:
+    wynik_w_UGD.append(1)
+elif wpisy_w_UGD[0]==1:
+    wynik_w_UGD.append(0)
+
+#pozycja 9
+if wpisy_w_UGD[1]==5:
+    wynik_w_UGD.append(0)
+elif wpisy_w_UGD[1]==4:
+    wynik_w_UGD.append(1)
+elif wpisy_w_UGD[1]==3:
+    wynik_w_UGD.append(2)
+elif wpisy_w_UGD[1]==2:
+    wynik_w_UGD.append(3)
+elif wpisy_w_UGD[1]==1:
+    wynik_w_UGD.append(4)
+    
+#pozycja 14  
+
+if wpisy_w_UGD[2]==5:
+    wynik_w_UGD.append(0)
+elif wpisy_w_UGD[2]==4:
+    wynik_w_UGD.append(1)
+elif wpisy_w_UGD[2]==3:
+    wynik_w_UGD.append(2)
+elif wpisy_w_UGD[2]==2:
+    wynik_w_UGD.append(3)
+elif wpisy_w_UGD[2]==1:
+    wynik_w_UGD.append(4)
+    
+# pozycja 19
+if wpisy_w_UGD[3]==5:
+    wynik_w_UGD.append(4)
+elif wpisy_w_UGD[3]==4:
+    wynik_w_UGD.append(3)
+elif wpisy_w_UGD[3]==3:
+    wynik_w_UGD.append(2)
+elif wpisy_w_UGD[3]==2:
+    wynik_w_UGD.append(1)
+elif wpisy_w_UGD[3]==1:
+    wynik_w_UGD.append(0)
+    
+#pozycja24
+    
+if wpisy_w_UGD[4]==5:
+    wynik_w_UGD.append(0)
+elif wpisy_w_UGD[4]==4:
+    wynik_w_UGD.append(1)
+elif wpisy_w_UGD[4]==3:
+    wynik_w_UGD.append(2)
+elif wpisy_w_UGD[4]==2:
+    wynik_w_UGD.append(3)
+elif wpisy_w_UGD[4]==1:
+    wynik_w_UGD.append(4)
+    
+#pozycja 29
+if wpisy_w_UGD[5]==5:
+    wynik_w_UGD.append(0)
+elif wpisy_w_UGD[5]==4:
+    wynik_w_UGD.append(1)
+elif wpisy_w_UGD[5]==3:
+    wynik_w_UGD.append(2)
+elif wpisy_w_UGD[5]==2:
+    wynik_w_UGD.append(3)
+elif wpisy_w_UGD[5]==1:
+    wynik_w_UGD.append(4)
+    
+# pozycja 34
+if wpisy_w_UGD[6]==5:
+    wynik_w_UGD.append(4)
+elif wpisy_w_UGD[6]==4:
+    wynik_w_UGD.append(3)
+elif wpisy_w_UGD[6]==3:
+    wynik_w_UGD.append(2)
+elif wpisy_w_UGD[6]==2:
+    wynik_w_UGD.append(1)
+elif wpisy_w_UGD[6]==1:
+    wynik_w_UGD.append(0)
+    
+#pozycja 39
+    
+if wpisy_w_UGD[7]==5:
+    wynik_w_UGD.append(0)
+elif wpisy_w_UGD[7]==4:
+    wynik_w_UGD.append(1)
+elif wpisy_w_UGD[7]==3:
+    wynik_w_UGD.append(2)
+elif wpisy_w_UGD[7]==2:
+    wynik_w_UGD.append(3)
+elif wpisy_w_UGD[7]==1:
+    wynik_w_UGD.append(4)
+    
+#pozycja 44
+if wpisy_w_UGD[8]==5:
+    wynik_w_UGD.append(0)
+elif wpisy_w_UGD[8]==4:
+    wynik_w_UGD.append(1)
+elif wpisy_w_UGD[8]==3:
+    wynik_w_UGD.append(2)
+elif wpisy_w_UGD[8]==2:
+    wynik_w_UGD.append(3)
+elif wpisy_w_UGD[8]==1:
+    wynik_w_UGD.append(4)
+
+# pozycja 49
+if wpisy_w_UGD[9]==5:
+    wynik_w_UGD.append(4)
+elif wpisy_w_UGD[9]==4:
+    wynik_w_UGD.append(3)
+elif wpisy_w_UGD[9]==3:
+    wynik_w_UGD.append(2)
+elif wpisy_w_UGD[9]==2:
+    wynik_w_UGD.append(1)
+elif wpisy_w_UGD[9]==1:
+    wynik_w_UGD.append(0)
+    
+#pozycja 54
+    
+if wpisy_w_UGD[10]==5:
+    wynik_w_UGD.append(0)
+elif wpisy_w_UGD[10]==4:
+    wynik_w_UGD.append(1)
+elif wpisy_w_UGD[10]==3:
+    wynik_w_UGD.append(2)
+elif wpisy_w_UGD[10]==2:
+    wynik_w_UGD.append(3)
+elif wpisy_w_UGD[10]==1:
+    wynik_w_UGD.append(4)
+    
+#pozycja 59
+if wpisy_w_UGD[11]==5:
+    wynik_w_UGD.append(0)
+elif wpisy_w_UGD[11]==4:
+    wynik_w_UGD.append(1)
+elif wpisy_w_UGD[11]==3:
+    wynik_w_UGD.append(2)
+elif wpisy_w_UGD[11]==2:
+    wynik_w_UGD.append(3)
+elif wpisy_w_UGD[11]==1:
+    wynik_w_UGD.append(4)
+
+
+print("To są wartości dla wpisu wypełniającego",wynik_w_UGD)
+wynik_ostateczny_w_UGD = sum(wynik_w_UGD)
+print("To jest ostateczny wynik w UGD:",wynik_ostateczny_w_UGD)
+
+print("------------------------------------------------------------")
+
+pozycje_SUM=[5,10,15,20,25,30,35,40,45,50,55,60]
+wpisy_w_SUM=[value for (key,value) in wpis_wszystkiego1.items() if key in pozycje_SUM] 
+print("To wypełniający zakreślił w pozycjach SUM",wpisy_w_SUM)
+
+wynik_w_SUM=[]
+# pozycja 5
+if wpisy_w_SUM[0]==5:
+    wynik_w_SUM.append(4)
+elif wpisy_w_SUM[0]==4:
+    wynik_w_SUM.append(3)
+elif wpisy_w_SUM[0]==3:
+    wynik_w_SUM.append(2)
+elif wpisy_w_SUM[0]==2:
+    wynik_w_SUM.append(1)
+elif wpisy_w_SUM[0]==1:
+    wynik_w_SUM.append(0)
+
+    # pozycja 10
+if wpisy_w_SUM[1]==5:
+    wynik_w_SUM.append(4)
+elif wpisy_w_SUM[1]==4:
+    wynik_w_SUM.append(3)
+elif wpisy_w_SUM[1]==3:
+    wynik_w_SUM.append(2)
+elif wpisy_w_SUM[1]==2:
+    wynik_w_SUM.append(1)
+elif wpisy_w_SUM[1]==1:
+    wynik_w_SUM.append(0)
+
+#pozycja 15
+if wpisy_w_SUM[2]==5:
+    wynik_w_SUM.append(0)
+elif wpisy_w_SUM[2]==4:
+    wynik_w_SUM.append(1)
+elif wpisy_w_SUM[2]==3:
+    wynik_w_SUM.append(2)
+elif wpisy_w_SUM[2]==2:
+    wynik_w_SUM.append(3)
+elif wpisy_w_SUM[2]==1:
+    wynik_w_SUM.append(4)
+    
+# pozycja 20
+if wpisy_w_SUM[3]==5:
+    wynik_w_SUM.append(4)
+elif wpisy_w_SUM[3]==4:
+    wynik_w_SUM.append(3)
+elif wpisy_w_SUM[3]==3:
+    wynik_w_SUM.append(2)
+elif wpisy_w_SUM[3]==2:
+    wynik_w_SUM.append(1)
+elif wpisy_w_SUM[3]==1:
+    wynik_w_SUM.append(0)
+
+    # pozycja 25
+if wpisy_w_SUM[4]==5:
+    wynik_w_SUM.append(4)
+elif wpisy_w_SUM[4]==4:
+    wynik_w_SUM.append(3)
+elif wpisy_w_SUM[4]==3:
+    wynik_w_SUM.append(2)
+elif wpisy_w_SUM[4]==2:
+    wynik_w_SUM.append(1)
+elif wpisy_w_SUM[4]==1:
+    wynik_w_SUM.append(0)
+
+#pozycja 30
+if wpisy_w_SUM[5]==5:
+    wynik_w_SUM.append(0)
+elif wpisy_w_SUM[5]==4:
+    wynik_w_SUM.append(1)
+elif wpisy_w_SUM[5]==3:
+    wynik_w_SUM.append(2)
+elif wpisy_w_SUM[5]==2:
+    wynik_w_SUM.append(3)
+elif wpisy_w_SUM[5]==1:
+    wynik_w_SUM.append(4)
+    
+# pozycja 35
+if wpisy_w_SUM[6]==5:
+    wynik_w_SUM.append(4)
+elif wpisy_w_SUM[6]==4:
+    wynik_w_SUM.append(3)
+elif wpisy_w_SUM[6]==3:
+    wynik_w_SUM.append(2)
+elif wpisy_w_SUM[6]==2:
+    wynik_w_SUM.append(1)
+elif wpisy_w_SUM[6]==1:
+    wynik_w_SUM.append(0)
+
+    # pozycja 40
+if wpisy_w_SUM[7]==5:
+    wynik_w_SUM.append(4)
+elif wpisy_w_SUM[7]==4:
+    wynik_w_SUM.append(3)
+elif wpisy_w_SUM[7]==3:
+    wynik_w_SUM.append(2)
+elif wpisy_w_SUM[7]==2:
+    wynik_w_SUM.append(1)
+elif wpisy_w_SUM[7]==1:
+    wynik_w_SUM.append(0)
+
+#pozycja 45
+if wpisy_w_SUM[8]==5:
+    wynik_w_SUM.append(0)
+elif wpisy_w_SUM[8]==4:
+    wynik_w_SUM.append(1)
+elif wpisy_w_SUM[8]==3:
+    wynik_w_SUM.append(2)
+elif wpisy_w_SUM[8]==2:
+    wynik_w_SUM.append(3)
+elif wpisy_w_SUM[8]==1:
+    wynik_w_SUM.append(4)
+    
+    # pozycja 50
+if wpisy_w_SUM[9]==5:
+    wynik_w_SUM.append(4)
+elif wpisy_w_SUM[9]==4:
+    wynik_w_SUM.append(3)
+elif wpisy_w_SUM[9]==3:
+    wynik_w_SUM.append(2)
+elif wpisy_w_SUM[9]==2:
+    wynik_w_SUM.append(1)
+elif wpisy_w_SUM[9]==1:
+    wynik_w_SUM.append(0)
+
+#pozycja 55
+if wpisy_w_SUM[10]==5:
+    wynik_w_SUM.append(0)
+elif wpisy_w_SUM[10]==4:
+    wynik_w_SUM.append(1)
+elif wpisy_w_SUM[10]==3:
+    wynik_w_SUM.append(2)
+elif wpisy_w_SUM[10]==2:
+    wynik_w_SUM.append(3)
+elif wpisy_w_SUM[10]==2:
+    wynik_w_SUM.append(1)
+elif wpisy_w_SUM[10]==1:
+    wynik_w_SUM.append(0)
+
+        # pozycja 60
+if wpisy_w_SUM[11]==5:
+    wynik_w_SUM.append(4)
+elif wpisy_w_SUM[11]==4:
+    wynik_w_SUM.append(3)
+elif wpisy_w_SUM[11]==3:
+    wynik_w_SUM.append(2)
+elif wpisy_w_SUM[11]==2:
+    wynik_w_SUM.append(1)
+elif wpisy_w_SUM[11]==1:
+    wynik_w_SUM.append(0)
+
+
+print("To są wartości dla wpisu wypełniającego",wynik_w_SUM)
+wynik_ostateczny_w_SUM = sum(wynik_w_SUM)
+print("To jest ostateczny wynik w SUM:",wynik_ostateczny_w_SUM)
+
+print("------------------------------------------------------------")
+print("#############################################################################")
+
+print("To jest ostateczny wynik w Neu:",wynik_ostateczny_w_Neu)
+print("To jest ostateczny wynik w Eks:",wynik_ostateczny_w_Eks)
+print("To jest ostateczny wynik w OTW:",wynik_ostateczny_w_OTW)
+print("To jest ostateczny wynik w UGD:",wynik_ostateczny_w_UGD)
+print("To jest ostateczny wynik w SUM:",wynik_ostateczny_w_SUM)
+print("#############################################################################")
